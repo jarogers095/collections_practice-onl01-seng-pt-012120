@@ -51,18 +51,15 @@ end
 
 def find_a(array)
   return array.select do |element|
-    element[0] == "a"
+    element.starts_with?("a")
   end
 end
 
 
 def sum_array(array)
-  sum = 0
-  array.each do |element|
-    sum += element
+  return array.inject do |sum, element|
+    sum + element
   end
-  
-  return sum
 end
 
 
