@@ -29,7 +29,12 @@ end
 
 
 def reverse_array(array)
+  reverse = []
+  array.each do |element|
+    reverse.shift(element)
+  end
   
+  return reverse
 end
 
 
