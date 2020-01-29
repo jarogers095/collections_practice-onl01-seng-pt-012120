@@ -28,6 +28,17 @@ def swap_elements(array)
 end
 
 
+def swap_elements_from_to(array, from, to)
+  if array.size > from && array.size > to 
+    hold = array[from]
+    array[from] = array[to]
+    array[to] = hold
+  end
+  
+  return array
+end
+
+
 def reverse_array(array)
   reverse = []
   array.each do |element|
