@@ -18,7 +18,13 @@ end
 
 
 def swap_elements(array)
+  if array.size > 2
+    hold = array[1]
+    array[1] = array[2]
+    array[2] = hold
+  end
   
+  return array
 end
 
 
