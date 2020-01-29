@@ -50,7 +50,9 @@ end
 
 
 def find_a(array)
-  
+  return array.select do |element|
+    element[0] == "a"
+  end
 end
 
 
