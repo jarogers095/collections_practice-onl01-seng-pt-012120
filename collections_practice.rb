@@ -39,7 +39,13 @@ end
 
 
 def kesha_maker(array)
+  array.each do |element|
+    if element.is_a?(String)
+      element[2] = "$"
+    end
+  end
   
+  return array
 end
 
 
