@@ -57,7 +57,12 @@ end
 
 
 def sum_array(array)
+  sum = 0
+  array.each do |element|
+    sum += element
+  end
   
+  return sum
 end
 
 
